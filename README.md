@@ -73,7 +73,7 @@ Table of index: <br>
 ```
 
 ### 🏗 | Architecture <a name='arch'></a>
-<img src='./ressources/architecture.png'>
+<img src='./ressources/architecture.png' style='width:100%; margin: 0 auto'>
 
 ------
 ### 📖 | Methodological notes - Get started <a name='get_started'></a>
