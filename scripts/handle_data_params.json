@@ -4,7 +4,7 @@
             "original_file": {
                 "file_path": "../data/en.openfoodfacts.org.products.csv",
                 "delimiter": "\t",
-                "nrows": "10000",
+                "nrows": "500000",
                 "col_exclusion": []
             },
             "processed_file": {

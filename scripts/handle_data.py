@@ -15,7 +15,7 @@ class Data_Processor:
         self.original_file = self.params['processing_params']['files']['original_file']
 
         self.df = pd.read_csv(self.original_file['file_path'], delimiter=self.original_file['delimiter'],
-                              low_memory=False, error_bad_lines=False, nrows=int(self.original_file['nrows']), memory_map=True)
+                              low_memory=False, error_bad_lines=False, nrows=int(self.original_file['nrows']), memory_map=True, encoding='utf-8', encoding_errors='ignore')
         r = pd.DataFrame(self.df.columns)
         self.SQL = self.SQL(self.df, params)
         ex = self.original_file['col_exclusion']
