@@ -1,0 +1,21 @@
+<%- include('partials/head', {title: 'PoC Nutrition'}); %>
+
+    <button id='btn_ocam' class="button debug">Scan product's barcode 🔍</button>
+
+    <div id='res_box' class="debug"></div>
+    <div id='video_box' width='640' height='480'></div>
+
+    <div id="info_box" class="box">
+        <button class="delete is-medium" id="quit_btn"></button>
+
+        <div id='table_box'>
+            <table class="box">
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <button id='charts_btn'>📊</button>
+
+
+<%- include('partials/footer'); %>

@@ -1,0 +1,11 @@
+<%- include('partials/head', {title: 'PoC - Charts', js: '<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>'}); %>
+
+<ul class="box center-center">
+    <button class="delete is-medium" id="return_btn"></button>
+    <h3 id="chat_index_title">Charts index 📂</h3>
+    <% for(var i=0; i<file_list.length; i++) {%>
+    <a href="/charts/<%= file_list[i] %>"><li><%= file_list[i].slice(0, -4) %></li></a>
+    <% } %>
+</ul>
+
+<%- include('partials/footer'); %>
