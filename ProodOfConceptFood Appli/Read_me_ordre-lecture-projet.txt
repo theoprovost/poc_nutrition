@@ -8,3 +8,6 @@ Welcome to projet Open Food Facts !
 de l'application sont expliquées !
 
 La présensation utilisée est le notebook_pyplot pour garder le côté intéractif des graphs.
+
+
+Lien de la data : https://drive.google.com/drive/u/1/folders/1eYftQgFF_ubhZ1y7vgtOwBD_SQx-WK1w
