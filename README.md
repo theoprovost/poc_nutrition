@@ -3,12 +3,75 @@
 Table of index: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🔍 | Queries notebook](https://github.com/theoprovost/poc_nutrition/blob/Th%C3%A9o/notebooks/queries.ipynb) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🛠 | Data handling notebook](https://github.com/theoprovost/poc_nutrition/blob/Th%C3%A9o/notebooks/data_processing.ipynb) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📊 | EDA notebook](https://github.com/theoprovost/poc_nutrition/blob/Th%C3%A9o/notebooks/EDA.ipynb) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📊 | EDA notebook](https://github.com/theoprovost/poc_nutrition/blob/Th%C3%A9o/notebooks/EDA.ipynb) <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Project's context](#project) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🗺 | App tree map](#map) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📖 | Methodological notes - Get started](#get_started) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🔁 | Automate data collection](#auto) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📺 | Presentation slides](https://slides.com/theoprvt/poc-nutrition/fullscreen) <br>
 
 ----
+### Project's context <a name='project'></a>
+
+> Insert here project context
+
+### App tree map <a name='map'></a>
+```shell
+.
+├── README.md
+├── app
+│   ├── backend
+│   │   ├── controllers
+│   │   │   ├── APIController.js
+│   │   │   ├── chartsController.js
+│   │   │   └── mainController.js
+│   │   ├── database.js
+│   │   ├── keys
+│   │   │   ├── cert.pem
+│   │   │   ├── key.pem
+│   │   │   ├── keytmp.pem
+│   │   │   └── redo.txt
+│   │   ├── models
+│   │   │   └── Record.js
+│   │   ├── node_modules
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── router.js
+│   │   └── server.js
+│   └── frontend
+│       ├── assets
+│       │   ├── css
+│       │   │   └── style.css
+│       │   ├── icons
+│       │   └── js
+│       │       └── script.js
+│       └── views
+│           ├── chart.ejs
+│           ├── charts.ejs
+│           ├── index.ejs
+│           └── partials
+│               ├── charts
+│               ├── footer.ejs
+│               └── head.ejs
+├── data
+│   ├── en.openfoodfacts.org.products.csv
+│   └── en.openfoodfacts.org.products_processed.csv
+├── database
+│   ├── create_db.sql
+│   ├── create_table.sql
+│   └── seed.sql
+├── index.js
+├── notebooks
+│   ├── EDA.ipynb
+│   ├── data_processing.ipynb
+│   └── queries.ipynb
+└── scripts
+    ├── generate_charts.py
+    ├── handle_data.py
+    └── handle_data_params.json
+```
+
+------
 ### 📖 | Methodological notes - Get started <a name='get_started'></a>
 
 > 💡 The app needs Node.js. Make sure you have the LTS version installed.
