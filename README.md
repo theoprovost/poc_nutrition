@@ -6,6 +6,7 @@ Table of index: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📊 | EDA notebook](https://github.com/theoprovost/poc_nutrition/blob/Th%C3%A9o/notebooks/EDA.ipynb) <br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Project's context](#project) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🗺 | App tree map](#map) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🏗 | Architecture](#arch) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📖 | Methodological notes - Get started](#get_started) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🔁 | Automate data collection](#auto) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📺 | Presentation slides](https://slides.com/theoprvt/poc-nutrition/fullscreen) <br>
@@ -13,7 +14,7 @@ Table of index: <br>
 ----
 ### Project's context <a name='project'></a>
 
-> Insert here project context
+> The main goal of this project is build an application idea. For this aim, we'll first need to analyze the required dataset to prove that the concept could work with our constraints.
 
 ### App tree map <a name='map'></a>
 ```shell
@@ -70,6 +71,9 @@ Table of index: <br>
     ├── handle_data.py
     └── handle_data_params.json
 ```
+
+### 🏗 | Architecture <a name='arch'></a>
+<img src='./ressources/architecture.png'>
 
 ------
 ### 📖 | Methodological notes - Get started <a name='get_started'></a>
