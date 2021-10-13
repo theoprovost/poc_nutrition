@@ -11,14 +11,14 @@ Table of index: <br>
 ----
 ### 📖 | Methodological notes - Get started <a name='get_started'></a>
 
-> 💡 The app needs Node.js. Make sure you have the LTS version.
+> 💡 The app needs Node.js. Make sure you have the LTS version installed.
 
 #### Installation of MVP :
 ```shell
 git clone <project-url>
 cd <project_path>/app/backend
 
-npm i
+npm install
 ```
 #### Start the app :
 ```shell
@@ -58,13 +58,5 @@ As asked, the data could be updated on a regular basis without further manipulat
 0 6 * * * curl https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv -o <path-to-folder-with-filename> && python <path-to-script>
 
 # For instance
-curl https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv -o /Users/theoprovost/Desktop/P11/data/en.openfoodfacts.org.products.csv  && python /Users/theoprovost/Desktop/P11/scripts/handle_data.py
+0 6 * * * curl https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv -o /Users/theoprovost/Desktop/P11/data/en.openfoodfacts.org.products.csv  && python /Users/theoprovost/Desktop/P11/scripts/handle_data.py
 ```
-
------
-#### 📍 Deliverables reminder
-- [x] Queries notebook
-- [x] Data processing notebook
-- [x] EDA notebook
-- [ ] Methodological note
-- [ ] Live presentation
