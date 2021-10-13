@@ -1,9 +1,9 @@
 # PoC Nutrition
 
 Table of index: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🔍 | Queries notebook]() <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🛠 | Data handling notebook]() <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📊 | EDA notebook]() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🔍 | Queries notebook](https://github.com/theoprovost/poc_nutrition/blob/Th%C3%A9o/notebooks/queries.ipynb) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🛠 | Data handling notebook](https://github.com/theoprovost/poc_nutrition/blob/Th%C3%A9o/notebooks/data_processing.ipynb) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📊 | EDA notebook](https://github.com/theoprovost/poc_nutrition/blob/Th%C3%A9o/notebooks/EDA.ipynb) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📖 | Methodological notes - Get started](#get_started) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🔁 | Automate data collection](#auto) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[📺 | Presentation slides](https://slides.com/theoprvt/poc-nutrition/fullscreen) <br>
