@@ -13,10 +13,10 @@ const port = process.env.PORT || 8443
 app.use(express.json())
 
 // Local static assets access
-app.use(express.static(path.join('./app/app/frontend/assets')));
+app.use(express.static(path.join('./app/frontend/assets')));
 
 // Views
-app.set('views', path.join('./app/app/frontend/views'));
+app.set('views', path.join('./app/frontend/views'));
 app.set('view engine', 'ejs');
 
 
