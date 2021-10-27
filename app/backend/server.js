@@ -13,18 +13,18 @@ const port = process.env.PORT || 8443
 app.use(express.json())
 
 // Local static assets access
-app.use(express.static(path.join('./app/frontend/assets')));
+app.use(express.static(path.join('./app/app/frontend/assets')));
 
 // Views
-app.set('views', path.join('./app/frontend/views'));
+app.set('views', path.join('./app/app/frontend/views'));
 app.set('view engine', 'ejs');
 
 
 app.use(router)
 
 // HTTPS support
-const key = fs.readFileSync('./app/keys/key.pem')
-const cert = fs.readFileSync('./app/keys/cert.pem');
+const key = fs.readFileSync('./app/app/backend/keys/key.pem')
+const cert = fs.readFileSync('./app/app/backend/keys/cert.pem');
 const httpsServer = https.createServer({ key: key, cert: cert }, app)
 
 httpsServer.listen(port, () => console.log(`Server is listening on https://localhost:${port}`));
