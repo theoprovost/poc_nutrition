@@ -3,3 +3,4 @@ data/
 .DS_Store
 app/backend/node_modules/
 .env
+node_modules/

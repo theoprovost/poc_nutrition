@@ -61,6 +61,16 @@ function createVideoElAndSurrounding() {
 
 async function processCode(code) {
     btn_ocam.textContent = `Searching EAN-13 :  ${code} 🔍`
+
+    err_msg = 'We encountered some CORS\'s related difficulties in production mode for this functionality. This should comme back soon.'
+
+    let p = document.createElement('p')
+    p.textContent = err_msg
+    p.classList = 'tag is-danger is-light'
+    resBox.appendChild(p)
+
+    return
+
     await fetch(`https://poc-nutrition.herokuapp.com/api/search/${code}`, {
         method: 'GET',
         headers: {
