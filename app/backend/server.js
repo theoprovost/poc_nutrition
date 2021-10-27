@@ -23,8 +23,8 @@ app.set('view engine', 'ejs');
 app.use(router)
 
 // HTTPS support
-const key = fs.readFileSync(path.join(__dirname, './keys/key.pem'))
-const cert = fs.readFileSync(path.join(__dirname, './keys/cert.pem'));
+const key = fs.readFileSync('./keys/key.pem')
+const cert = fs.readFileSync('./keys/cert.pem');
 const httpsServer = https.createServer({ key: key, cert: cert }, app)
 
 httpsServer.listen(port, () => console.log(`Server is listening on https://localhost:${port}`));
