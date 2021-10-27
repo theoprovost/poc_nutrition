@@ -2,5 +2,4 @@ data/
 .ipynb_checkpoints
 .DS_Store
 app/backend/node_modules/
-app/backend/keys/*.pem
 .env
