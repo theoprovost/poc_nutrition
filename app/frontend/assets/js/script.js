@@ -61,7 +61,7 @@ function createVideoElAndSurrounding() {
 
 async function processCode(code) {
     btn_ocam.textContent = `Searching EAN-13 :  ${code} 🔍`
-    await fetch(`https://localhost:8443/api/search/${code}`, {
+    await fetch(`https://poc-nutrition.herokuapp.com/api/search/${code}`, {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
