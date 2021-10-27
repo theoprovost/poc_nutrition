@@ -16,17 +16,12 @@ class Data_Processor:
 
         self.df = pd.read_csv(self.original_file['file_path'], delimiter=self.original_file['delimiter'],
                               low_memory=False, error_bad_lines=False, nrows=int(self.original_file['nrows']), memory_map=True, encoding='utf-8', encoding_errors='ignore')
-        r = pd.DataFrame(self.df.columns)
         self.SQL = self.SQL(self.df, params)
         ex = self.original_file['col_exclusion']
         if (ex is not None and type(ex) == list):
             self.drop_cols(ex)
 
         print('N rows start :', len(self.df), '\n')
-
-    def __del__(self):
-        print('N rows end :', len(self.df), '\n')
-        return self.df
 
     def process(self):
         '''Main method to launch the data processing logic'''
@@ -264,7 +259,7 @@ def main(params):
 #        INIT DATA PROCESSING BELOW
 #############################################
 
-json_file_path = './handle_data_params.json'
+json_file_path = 'scripts/handle_data_params.json'
 with open(json_file_path, 'r') as f:
     params = json.loads(f.read())
 

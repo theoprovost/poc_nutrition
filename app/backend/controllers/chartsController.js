@@ -6,7 +6,12 @@ const ChartsController = {
     index: (req, res) => {
         folder_path = path.resolve('./app/frontend/views/partials/charts')
         file_list = fs.readdirSync(folder_path)
-        console.log(file_list)
+        file_list.forEach(el => {
+            if (el.startsWith('.')) {
+                el_id = file_list.indexOf(el)
+                file_list.splice(el_id, 1)
+            }
+        })
         res.render('charts', { file_list })
     },
 

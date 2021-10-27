@@ -2,13 +2,13 @@
     "processing_params": {
         "files": {
             "original_file": {
-                "file_path": "../data/en.openfoodfacts.org.products.csv",
+                "file_path": "./data/en.openfoodfacts.org.products.csv",
                 "delimiter": "\t",
-                "nrows": "500000",
+                "nrows": "10000",
                 "col_exclusion": []
             },
             "processed_file": {
-                "file_path": "../data/en.openfoodfacts.org.products_processed.csv",
+                "file_path": "./data/en.openfoodfacts.org.products_processed.csv",
                 "delimiter": ","
             }
         },
@@ -89,9 +89,9 @@
             }
         },
         "SQL": {
-            "createdb_script_path": "../database/create_db.sql",
-            "create_table_script_path": "../database/create_table.sql",
-            "seed_script_path": "../database/seed.sql",
+            "createdb_script_path": "./database/create_db.sql",
+            "create_table_script_path": "./database/create_table.sql",
+            "seed_script_path": "./database/seed.sql",
             "db_name": "open_food_data_db",
             "table_name": "records"
         }
