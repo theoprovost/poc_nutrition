@@ -5,12 +5,16 @@ const fs = require('fs')
 //const https = require('https')
 const express = require('express')
 const router = require('./router.js')
+const cors = require('cors')
 
 
 const app = express()
 const port = process.env.PORT || 8443
 
 app.use(express.json())
+app.use(cors({
+    origin: 'https://poc-nutrition.herokuapp.com'
+}))
 
 // Local static assets access
 app.use(express.static(path.join('./app/frontend/assets')));
